@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To-Do List</title>
+  <!-- Import Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap" rel="stylesheet">
+  <!-- Style -->
+  <link rel="stylesheet" href="/assets/style.css" />
+</head>
+<body>
+  <main>
+    <div class="container">
+      <div class="title">
+        <h1>To-Do List</h1>
+        <span>O que você precisa fazer hoje?</span>
+      </div>
+      <div class="form">
+        <form class="form-tasks">
+          <label>Título da tarefa</label>
+          <input type="text" />
+          <label>Descrição</label>
+          <textarea></textarea>
+          <label>Horário de entrega</label>
+          <input type="time" />
+          <button class="btn-primary">Adicionar</button>
+        </form>
+      </div>
+    </div>
+    <div class="container">
+      <div class="title">
+        <h1>Suas tarefas do dia</h1>
+      </div>
+      <div class="card">
+        <h4>Título</h4>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates harum dolores a ipsum nihil dignissimos cum doloremque, animi tempora odio assumenda quisquam aliquid, optio corporis veritatis reprehenderit temporibus nesciunt delectus?</p>
+        <div class="task-end">
+          <h5>Hora de entrega:</h5>
+          <p>13:00</p>
+          <div class="task-actions">
+            <button>Deletar</button>
+            <button>Concluído</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
