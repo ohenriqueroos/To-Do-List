@@ -121,6 +121,7 @@ textarea:focus {
 .card {
   padding: .8rem .8rem;
   height: auto;
+  width: 100%;
   background-color: var(--assistant-color);
   color: var(--background-color);
   border-radius: 1rem;
