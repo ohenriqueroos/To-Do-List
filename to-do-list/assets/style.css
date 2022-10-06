@@ -130,6 +130,7 @@ textarea:focus {
   margin-top: .5rem;
   display: flex;
   align-items: flex-end;
+  justify-content: space-between;
   gap: .5rem;
 }
 
@@ -140,12 +141,25 @@ textarea:focus {
   gap: .5rem;
 }
 
+.time {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  gap: .5rem;
+}
+
 .btn-delete {
   width: 2.2rem;
   height: 2.2rem;
   border: none;
   border-radius: .8rem;
   background-color: #ff0000;
+  cursor: pointer;
+}
+
+.btn-delete svg {
+  width: 25px;
+  height: 25px;
 }
 
 .btn-concluded {
@@ -154,4 +168,10 @@ textarea:focus {
   border: none;
   border-radius: .8rem;
   background-color: #008000;
+  cursor: pointer;
+}
+
+.btn-concluded svg {
+  width: 25px;
+  height: 25px;
 }
