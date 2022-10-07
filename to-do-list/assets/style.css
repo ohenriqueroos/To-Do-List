@@ -111,6 +111,7 @@ textarea:focus {
   font-weight: 700;
   font-size: 1rem;
   cursor: pointer;
+  outline: none;
   transition: all ease-out .3s;
 }
 

@@ -23,10 +23,6 @@
         <form class="form-tasks">
           <label>Título da tarefa</label>
           <input id="task-title" type="text" />
-          <label>Descrição</label>
-          <textarea id="task-description"></textarea>
-          <label>Horário de entrega</label>
-          <input id="task-time" type="time" />
           <button id="task-add" class="btn-primary">Adicionar</button>
         </form>
       </div>
@@ -35,22 +31,15 @@
       <div class="title">
         <h1>Suas tarefas do dia</h1>
       </div>
-      <div class="card">
+      <div id="card" class="card">
         <h4 id="card-title">Título</h4>
-        <p id="card-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates harum dolores a ipsum nihil dignissimos cum doloremque, animi tempora odio assumenda quisquam aliquid, optio corporis veritatis reprehenderit temporibus nesciunt delectus?</p>
-        <div class="task-end">
-          <div class="time">
-            <h5>Hora de entrega:</h5>
-            <p id="card-time">13:00</p>
-          </div>
-          <div class="task-actions">
-            <button class="btn-delete">
-              <svg xmlns="http://www.w3.org/2000/svg" viewbox="2 0 40 40"><path fill="white" d="m12.45 38.35-2.8-2.8L21.2 24 9.65 12.45l2.8-2.8L24 21.2 35.55 9.65l2.8 2.8L26.8 24l11.55 11.55-2.8 2.8L24 26.8Z"/></svg>
-            </button>
-            <button class="btn-concluded">
-              <svg xmlns="http://www.w3.org/2000/svg" viewbox="2 0 40 40"><path fill="white" d="M18.9 36.4 7 24.5l2.9-2.85 9 9L38.05 11.5l2.9 2.85Z"/></svg>
-            </button>
-          </div>
+        <div id="task-actions" class="task-actions">
+          <button class="btn-delete">
+            <svg xmlns="http://www.w3.org/2000/svg" viewbox="2 0 40 40"><path fill="white" d="m12.45 38.35-2.8-2.8L21.2 24 9.65 12.45l2.8-2.8L24 21.2 35.55 9.65l2.8 2.8L26.8 24l11.55 11.55-2.8 2.8L24 26.8Z"/></svg>
+          </button>
+          <button class="btn-concluded">
+            <svg xmlns="http://www.w3.org/2000/svg" viewbox="2 0 40 40"><path fill="white" d="M18.9 36.4 7 24.5l2.9-2.85 9 9L38.05 11.5l2.9 2.85Z"/></svg>
+          </button>
         </div>
       </div>
     </div>
