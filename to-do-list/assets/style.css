@@ -177,3 +177,7 @@ textarea:focus {
   width: 25px;
   height: 25px;
 }
+
+.done h4 {
+  text-decoration: line-through;
+}

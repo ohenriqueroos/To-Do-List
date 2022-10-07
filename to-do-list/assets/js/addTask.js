@@ -1,6 +1,8 @@
 const inputTitle = document.querySelector('#task-title');
 const buttonAdd = document.querySelector('#task-add');
 const task = document.querySelector('#task');
+const deleteButton = document.querySelector('btn-delete');
+const doneButton = document.querySelector('btn-concluded');
 
 buttonAdd.addEventListener('click', function (e) {
   e.preventDefault();
@@ -37,4 +39,15 @@ buttonAdd.addEventListener('click', function (e) {
   task.appendChild(newCard);
   //Reseta o input
   inputTitle.value = "";
+
+  //Função de deletar
+  deleteButton.addEventListener("click", function (e) {
+    e.preventDefault();
+    newCard.remove();
+  });
+
+  doneButton.addEventListener("click", function (e) {
+    e.preventDefault();
+    newCard.classList.add("done");
+  })
 });
