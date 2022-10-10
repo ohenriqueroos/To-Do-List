@@ -46,8 +46,13 @@ buttonAdd.addEventListener('click', function (e) {
     newCard.remove();
   });
 
+  //Função de concluir
   doneButton.addEventListener("click", function (e) {
     e.preventDefault();
-    newCard.classList.add("done");
-  })
+    if (!newCard.classList.contains("done")) {
+      newCard.classList.add("done");
+    } else {
+      newCard.classList.remove("done");
+    }
+  });
 });
