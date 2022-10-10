@@ -19,6 +19,9 @@ buttonAdd.addEventListener('click', function (e) {
   //Adiciona os botões
   const taskAction = document.createElement('div');
   taskAction.classList.add('task-actions');
+  const editButton = document.createElement('button');
+  editButton.classList.add("btn-edit");
+  editButton.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" viewbox="2 0 40 40"><path fill="white" d="m39.7 14.7-6.4-6.4 2.1-2.1q.85-.85 2.125-.825 1.275.025 2.125.875L41.8 8.4q.85.85.85 2.1t-.85 2.1Zm-2.1 2.1L12.4 42H6v-6.4l25.2-25.2Z"/></svg>';
   const deleteButton = document.createElement('button');
   deleteButton.classList.add("btn-delete");
   deleteButton.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" viewbox="2 0 40 40"><path fill="white" d="m12.45 38.35-2.8-2.8L21.2 24 9.65 12.45l2.8-2.8L24 21.2 35.55 9.65l2.8 2.8L26.8 24l11.55 11.55-2.8 2.8L24 26.8Z"/></svg>';
@@ -26,9 +29,10 @@ buttonAdd.addEventListener('click', function (e) {
   doneButton.classList.add("btn-concluded");
   doneButton.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" viewbox="2 0 40 40"><path fill="white" d="M18.9 36.4 7 24.5l2.9-2.85 9 9L38.05 11.5l2.9 2.85Z"/></svg>';
 
-
   //Insere o novo título dentro do novo card
   newCard.appendChild(newTitle);
+  //Insere o botão de editar dentro da div
+  taskAction.appendChild(editButton);
   //Insere o botão de delete dentro da div
   taskAction.appendChild(deleteButton);
   //Insere o botão de delete dentro da div
@@ -46,7 +50,7 @@ buttonAdd.addEventListener('click', function (e) {
     newCard.remove();
   });
 
-  //Função de concluir
+  //Função de concluir e remover concluir
   doneButton.addEventListener("click", function (e) {
     e.preventDefault();
     if (!newCard.classList.contains("done")) {
